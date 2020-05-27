@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="About.css">
+<title>Kompanija</title>
+<img src="merclogo.svg" height="150px" width="250px"><img src="merc_Text_near_logo.svg" height="150px" width="250px"><img src="Mercedes_1mil.gif" height="150px"><img src="Mercedes_music.gif" height="150px"><img src="Mercedes_far.gif" height="150px"<!--LOGO --><!--LOGO -->
+ 
+</head>
+<body style="background-color:black;">
+ 
+	<ul><!--Navigacioni meni -->
+		<li><a href="index1.html">Home</a></li>
+		<li><a href="News.html">News</a></li>
+		<li><a href="Contact.html">Contact</a></li>
+		<li><a href="About.html">About</a></li>
+	</ul>
+	
+	
+	
+    <button type="button" class="collapsible">Kontakt</button>
+	<div class="content">
+		<p>KONTAK TELEFON:<strong>123123123123</strong></p>
+			</div>
+	<div class="MapaBg">
+		<img src="Merc_bg_map.PNG" style="margin-left:15%;" border="3">
+			</div>
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+		for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+			var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		content.style.display = "none";
+		} else {
+		content.style.display = "block";
+		}
+	});
+	}
+	</script>
+	
+	<footer style="background-color:Black;">
+		<p style="color:white;">Posted by: Zoran Sekanic</p>
+			<p style="color:white;">Contact information: <a style="color:white;" href="mailto:someone@example.com">
+				someone@example.com</a>.</p>
+	</footer>
+	
+</body>
+</html>
